@@ -63,5 +63,17 @@ public class Client {
 	public void setAdresse(String adresse) {
 		this.adresse = adresse;
 	}
+	/**
+	 * @return the compte
+	 */
+	public Compte getCompte() {
+		return compte;
+	}
+	/**
+	 * @param compte the compte to set
+	 */
+	public void setCompte(Compte compte) {
+		this.compte = compte;
+	}
 	
 }

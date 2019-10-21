@@ -12,6 +12,6 @@ import com.moi.project.models.Compte;
  *
  */
 public interface ICompteRepository extends JpaRepository<Compte, Long> {
-	
+	public Compte findByLogAndPass(String log,String pass);
 
 }

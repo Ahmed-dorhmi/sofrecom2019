@@ -71,6 +71,18 @@ public class Compte {
 	public void setRole(String role) {
 		this.role = role;
 	}
+	/**
+	 * @return the client
+	 */
+	public Client getClient() {
+		return client;
+	}
+	/**
+	 * @param client the client to set
+	 */
+	public void setClient(Client client) {
+		this.client = client;
+	}
 	
 	
 }
