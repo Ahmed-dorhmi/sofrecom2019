@@ -1,10 +1,14 @@
 package com.moi.project.models;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 
 
@@ -24,6 +28,8 @@ public class Produit {
 	Categorie categorie;
 
 
+	@OneToMany(mappedBy = "produit",cascade=CascadeType.ALL)
+	Set<Composant> composants=new HashSet<>();
 	/**
 	 * @return the idproduit
 	 */
@@ -117,6 +123,22 @@ public class Produit {
 	 */
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+
+	/**
+	 * @return the composants
+	 */
+	public Set<Composant> getComposants() {
+		return composants;
+	}
+
+
+	/**
+	 * @param composants the composants to set
+	 */
+	public void setComposants(Set<Composant> composants) {
+		this.composants = composants;
 	}
 
 
