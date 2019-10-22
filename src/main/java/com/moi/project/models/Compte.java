@@ -83,6 +83,13 @@ public class Compte {
 	public void setClient(Client client) {
 		this.client = client;
 	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Compte [idcompte=" + idcompte + ", log=" + log + ", pass=" + pass + ", role=" + role + "]";
+	}
 	
 	
 }

@@ -17,6 +17,7 @@ public class Produit {
 	String designation;
 	int quantite;
 	double prixunitaire;
+	String description;
 	
 	
 	@ManyToOne(cascade=CascadeType.ALL)
@@ -100,6 +101,22 @@ public class Produit {
 	 */
 	public void setCategorie(Categorie categorie) {
 		this.categorie = categorie;
+	}
+
+
+	/**
+	 * @return the description
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+
+	/**
+	 * @param description the description to set
+	 */
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 
